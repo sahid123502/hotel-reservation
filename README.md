@@ -2,10 +2,8 @@
 ## Tugas UAS Mata Kuliah Cloud Computing
 
 ### Anggota Kelompok
-1. [Nama Lengkap] - [NIM]
-2. [Nama Lengkap] - [NIM]
-3. [Nama Lengkap] - [NIM]
-4. [Nama Lengkap] - [NIM]
+1. Sahit Hidayat (141241018)
+2. Elysa Dika Permatasari (141241018)
 
 ### Deskripsi Singkat
 Aplikasi sistem reservasi kamar hotel berbasis web. Dibangun menggunakan Laravel 11 dan Filament, di-deploy ke layanan cloud nyata. Memenuhi seluruh syarat tugas.
