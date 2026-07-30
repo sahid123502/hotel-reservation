@@ -1,9 +1,0 @@
-sequenceDiagram
-    Tamu->>Sistem: Pilih kamar & tanggal
-    Sistem-->>Tamu: Tampilkan rincian harga
-    Tamu->>Sistem: Kirim reservasi + bukti bayar
-    Sistem->>Sistem: Simpan status "Menunggu"
-    Sistem-->>Manajer: Ada pembayaran baru
-    Manajer->>Sistem: Periksa & setujui/tolak
-    Sistem->>Email: Kirim hasil ke Tamu
-    Sistem-->>Tamu: Tampilkan status terbaru

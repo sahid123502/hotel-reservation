@@ -1,7 +1,0 @@
-erDiagram
-    USER ||--o{ RESERVATION : "membuat"
-    ROOM ||--o{ RESERVATION : "dipilih dalam"
-    
-    USER { int id PK string name string email string password enum role }
-    ROOM { int id PK string room_number string type decimal price enum status }
-    RESERVATION { int id PK int user_id FK int room_id FK date check_in_date date check_out_date decimal total_price enum status string payment_proof }
