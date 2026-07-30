@@ -1,1 +1,22 @@
+name: Deploy Aplikasi
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ambil Kode Sumber
+        uses: actions/checkout@v4
+      - name: Pasang Dependensi
+        uses: ramsey/composer-install@v3
+      - name: Kompilasi Aset
+        uses: actions/setup-node@v4
+        with: { node-version: 20 }
+        run: npm ci && npm run build
+      - name: Kirim ke Layanan Cloud
+        uses: johnbeynon/render-deploy@v1
+        with:
+          api-key: ${{ secrets.RENDER_API_KEY }}
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
 
