@@ -1,0 +1,28 @@
+classDiagram
+    class User {
+        +int id
+        +string name
+        +string email
+        +string password
+        +string role
+        +checkAccess()
+    }
+    class Room {
+        +int id
+        +string room_number
+        +string type
+        +decimal price
+        +string status
+    }
+    class Reservation {
+        +int id
+        +int user_id
+        +int room_id
+        +date check_in_date
+        +date check_out_date
+        +decimal total_price
+        +string status
+        +string payment_proof
+    }
+    User "1" -- "*" Reservation : membuat
+    Room "1" -- "*" Reservation : dipilih dalam
