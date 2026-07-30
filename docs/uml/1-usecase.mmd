@@ -1,19 +1,34 @@
-usecaseDiagram
-    actor Tamu
-    actor Resepsionis
-    actor Manajer
+flowchart LR
+    %% Aktor
+    T[Tamu]
+    R[Resepsionis]
+    M[Manajer]
 
-    Tamu --> (Lihat Daftar Kamar)
-    Tamu --> (Buat Reservasi)
-    Tamu --> (Unggah Bukti Pembayaran)
-    Tamu --> (Lihat Status & Riwayat)
-    
-    Resepsionis --> (Kelola Data Kamar)
-    Resepsionis --> (Konfirmasi Check-in/Check-out)
-    
-    Manajer --> (Verifikasi Pembayaran)
-    Manajer --> (Setujui/Tolak Reservasi)
-    Manajer --> (Lihat Laporan Bulanan)
+    %% Use Case
+    UC1((Lihat Daftar Kamar))
+    UC2((Buat Reservasi))
+    UC3((Unggah Bukti Pembayaran))
+    UC4((Lihat Status & Riwayat))
+    UC5((Kelola Data Kamar))
+    UC6((Konfirmasi Check-in/Check-out))
+    UC7((Verifikasi Pembayaran))
+    UC8((Setujui/Tolak Reservasi))
+    UC9((Lihat Laporan Bulanan))
+    UC10((Kirim Notifikasi Status))
 
-    (Buat Reservasi) .include. (Lihat Daftar Kamar)
-    (Verifikasi Pembayaran) .extend. (Kirim Notifikasi Status)
+    %% Relasi Aktor
+    T --- UC1
+    T --- UC2
+    T --- UC3
+    T --- UC4
+
+    R --- UC5
+    R --- UC6
+
+    M --- UC7
+    M --- UC8
+    M --- UC9
+
+    %% Relasi include & extend
+    UC2 -.<<include>>.-> UC1
+    UC7 -.<<extend>>.-> UC10
