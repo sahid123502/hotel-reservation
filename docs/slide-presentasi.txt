@@ -1,0 +1,13 @@
+DAFTAR ISI SLIDE PRESENTASI
+1. Halaman Judul & Identitas Kelompok
+2. Latar Belakang Masalah
+3. Gambaran Umum Sistem
+4. Diagram Use Case & Hak Akses
+5. Diagram Kelas & ERD
+6. Diagram Alur & Urutan
+7. Arsitektur Perangkat Lunak
+8. Arsitektur Infrastruktur Cloud
+9. Justifikasi Pemilihan Layanan
+10. Estimasi Biaya
+11. Kesimpulan
+12. Sesi Tanya Jawab
