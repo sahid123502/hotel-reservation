@@ -23,7 +23,7 @@ Aplikasi sistem reservasi kamar hotel berbasis web. Dibangun menggunakan Laravel
 ✅ Pembatalan otomatis reservasi kadaluarsa
 
 ### Cara Jalankan
-git clone https://github.com/sahid123502/reservasi-hotel.git
+git clone https://github.com/sahid123502hotel-reservation.git
 composer install
 cp .env.example .env
 php artisan key:generate
