@@ -1,0 +1,10 @@
+flowchart TD
+    Mulai([Mulai]) --> Login[Masuk ke akun]
+    Login --> PilihKamar[Lihat & pilih kamar]
+    PilihKamar --> IsiTanggal[Isi tanggal masuk/keluar]
+    IsiTanggal --> UnggahBerkas[Unggah bukti bayar]
+    UnggahBerkas --> Menunggu[Menunggu verifikasi]
+    Menunggu --> Keputusan{Diterima?}
+    Keputusan -->|Tidak| Tolak[Kirim notifikasi ditolak] --> Selesai([Selesai])
+    Keputusan -->|Ya| Setuju[Simpan & kunci kamar]
+    Setuju --> KirimInfo[Kirim bukti reservasi] --> Selesai
